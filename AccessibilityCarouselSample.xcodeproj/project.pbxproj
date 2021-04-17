@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		1E32079E262B09A500C0343C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32079D262B09A500C0343C /* AppDelegate.swift */; };
 		1E3207A0262B09A500C0343C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32079F262B09A500C0343C /* SceneDelegate.swift */; };
-		1E3207A2262B09A500C0343C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3207A1262B09A500C0343C /* ViewController.swift */; };
 		1E3207A5262B09A500C0343C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3207A3262B09A500C0343C /* Main.storyboard */; };
 		1E3207A7262B09A500C0343C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3207A6262B09A500C0343C /* Assets.xcassets */; };
 		1E3207AA262B09A500C0343C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3207A8262B09A500C0343C /* LaunchScreen.storyboard */; };
+		1E3207B3262B09FD00C0343C /* VisibleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3207B2262B09FD00C0343C /* VisibleCollectionViewController.swift */; };
+		1E3207B6262B0C6A00C0343C /* AccessibleCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3207B5262B0C6A00C0343C /* AccessibleCarousel.swift */; };
+		1E3207BC262B1B2100C0343C /* UICollectionView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3207BB262B1B2100C0343C /* UICollectionView+Helpers.swift */; };
+		1E3207BF262B1B9400C0343C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3207BE262B1B9400C0343C /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E32079A262B09A500C0343C /* AccessibilityCarouselSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibilityCarouselSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E32079D262B09A500C0343C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E32079F262B09A500C0343C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E3207A1262B09A500C0343C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1E3207A4262B09A500C0343C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E3207A6262B09A500C0343C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E3207A9262B09A500C0343C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E3207AB262B09A500C0343C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E3207B2262B09FD00C0343C /* VisibleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibleCollectionViewController.swift; sourceTree = "<group>"; };
+		1E3207B5262B0C6A00C0343C /* AccessibleCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleCarousel.swift; sourceTree = "<group>"; };
+		1E3207BB262B1B2100C0343C /* UICollectionView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Helpers.swift"; sourceTree = "<group>"; };
+		1E3207BE262B1B9400C0343C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,24 @@
 			children = (
 				1E32079D262B09A500C0343C /* AppDelegate.swift */,
 				1E32079F262B09A500C0343C /* SceneDelegate.swift */,
-				1E3207A1262B09A500C0343C /* ViewController.swift */,
+				1E3207C3262B1BE200C0343C /* Carousel */,
 				1E3207A3262B09A500C0343C /* Main.storyboard */,
 				1E3207A6262B09A500C0343C /* Assets.xcassets */,
 				1E3207A8262B09A500C0343C /* LaunchScreen.storyboard */,
 				1E3207AB262B09A500C0343C /* Info.plist */,
 			);
 			path = AccessibilityCarouselSample;
+			sourceTree = "<group>";
+		};
+		1E3207C3262B1BE200C0343C /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				1E3207B2262B09FD00C0343C /* VisibleCollectionViewController.swift */,
+				1E3207BE262B1B9400C0343C /* Color.swift */,
+				1E3207B5262B0C6A00C0343C /* AccessibleCarousel.swift */,
+				1E3207BB262B1B2100C0343C /* UICollectionView+Helpers.swift */,
+			);
+			path = Carousel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E3207A2262B09A500C0343C /* ViewController.swift in Sources */,
+				1E3207BC262B1B2100C0343C /* UICollectionView+Helpers.swift in Sources */,
+				1E3207BF262B1B9400C0343C /* Color.swift in Sources */,
+				1E3207B3262B09FD00C0343C /* VisibleCollectionViewController.swift in Sources */,
+				1E3207B6262B0C6A00C0343C /* AccessibleCarousel.swift in Sources */,
 				1E32079E262B09A500C0343C /* AppDelegate.swift in Sources */,
 				1E3207A0262B09A500C0343C /* SceneDelegate.swift in Sources */,
 			);
@@ -287,7 +307,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P67Q4Q7HA9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AccessibilityCarouselSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,7 +326,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P67Q4Q7HA9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AccessibilityCarouselSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
